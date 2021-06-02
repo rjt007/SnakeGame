@@ -52,8 +52,8 @@ def gameloop():
     veloc_x = 0
     veloc_y = 0
     init_velocity = 5
-    food_x = random.randint(40, screen_width // 1.4)
-    food_y = random.randint(40, screen_height // 1.4)
+    food_x = random.randint(45, screen_width // 1.5)
+    food_y = random.randint(45, screen_height // 1.5)
     snake_size = 15
     score = 0
     fps = 40
@@ -101,8 +101,8 @@ def gameloop():
 
             if abs(snake_x - food_x) < 10 and abs(snake_y - food_y) < 10:
                 score += 10
-                food_x = random.randint(25, screen_height // 2)
-                food_y = random.randint(25, screen_height // 2)
+                food_x = random.randint(45, screen_height // 1.5)
+                food_y = random.randint(45, screen_height // 1.5)
                 snake_length += 5
                 if score>int(highscore):
                     highscore = score
